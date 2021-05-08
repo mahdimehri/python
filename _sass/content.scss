@@ -75,7 +75,7 @@
     > li {
       &::before {
         position: absolute;
-        margin-left: -1.4em;
+        margin-right: -1.4em;
         color: $grey-dk-000;
         content: "•";
       }
