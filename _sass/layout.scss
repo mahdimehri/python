@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $sidebar-color;
-direction: rtl;
+
   @include mq(md) {
     flex-wrap: nowrap;
     position: fixed;
@@ -15,7 +15,7 @@ direction: rtl;
     height: 100%;
     flex-direction: column;
     border-right: $border $border-color;
-    align-items:flex-start;
+    align-items:flex-end;
   }
 
   @include mq(lg) {
@@ -25,15 +25,15 @@ direction: rtl;
 }
 
 .main {
-  direction: rtl;
+ 
   @include mq(md) {
     position: relative;
     max-width: $content-width;
-    margin-left: $nav-width-md;
+    margin-right: $nav-width-md;
   }
 
   @include mq(lg) {
-    margin-left: calc(
+    margin-right: calc(
       (100% - #{$nav-width + $content-width}) / 2 + #{$nav-width}
     );
   }
