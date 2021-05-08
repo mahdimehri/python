@@ -7,7 +7,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: $sidebar-color;
-
+direction: rtl;
   @include mq(md) {
     flex-wrap: nowrap;
     position: fixed;
@@ -15,7 +15,7 @@
     height: 100%;
     flex-direction: column;
     border-right: $border $border-color;
-    align-items: flex-end;
+    align-items:flex-start;
   }
 
   @include mq(lg) {
@@ -25,6 +25,7 @@
 }
 
 .main {
+  direction: rtl;
   @include mq(md) {
     position: relative;
     max-width: $content-width;
